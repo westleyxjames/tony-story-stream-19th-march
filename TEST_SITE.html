@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Test Page - StoryStream Daily</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .test-section { background: #f9fafb; padding: 2rem; margin: 2rem 0; border-radius: 0.5rem; }
+    .test-section h2 { margin-bottom: 1rem; }
+    .test-link { display: block; padding: 0.5rem; margin: 0.25rem 0; background: white; border: 1px solid #e5e7eb; border-radius: 0.25rem; text-decoration: none; color: #111827; }
+    .test-link:hover { background: #f3f4f6; }
+    .status { display: inline-block; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: 600; margin-left: 0.5rem; }
+    .status.ok { background: #d1fae5; color: #065f46; }
+    .status.pending { background: #fef3c7; color: #92400e; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">StoryStream Daily</a>
+      <nav id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="editorial-guidelines.html">Editorial Guidelines</a>
+      </nav>
+      <button id="mobile-menu-btn" class="mobile-menu-btn">
+        <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg class="close-icon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container py-8">
+      <h1 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 2rem;">Site Status & Test Page</h1>
+      
+      <div class="test-section">
+        <h2>✅ Core Files Status</h2>
+        <a href="css/styles.css" class="test-link" target="_blank">CSS Stylesheet <span class="status ok">EXISTS</span></a>
+        <a href="js/main.js" class="test-link" target="_blank">JavaScript File <span class="status ok">EXISTS</span></a>
+      </div>
+
+      <div class="test-section">
+        <h2>📄 Static Pages (9 Total)</h2>
+        <a href="index.html" class="test-link">Homepage <span class="status ok">OK</span></a>
+        <a href="about.html" class="test-link">About <span class="status ok">OK</span></a>
+        <a href="contact.html" class="test-link">Contact <span class="status ok">OK</span></a>
+        <a href="editorial-guidelines.html" class="test-link">Editorial Guidelines <span class="status ok">OK</span></a>
+        <a href="how-we-make-money.html" class="test-link">How We Make Money <span class="status ok">OK</span></a>
+        <a href="privacy-policy.html" class="test-link">Privacy Policy <span class="status ok">OK</span></a>
+        <a href="terms-conditions.html" class="test-link">Terms & Conditions <span class="status ok">OK</span></a>
+        <a href="disclaimer.html" class="test-link">Disclaimer <span class="status ok">OK</span></a>
+        <a href="cookie-policy.html" class="test-link">Cookie Policy <span class="status ok">OK</span></a>
+      </div>
+
+      <div class="test-section">
+        <h2>📰 Article Pages</h2>
+        <h3 style="margin-top: 1rem; color: #059669;">✅ Created (3)</h3>
+        <a href="articles/why-slow-living-is-gaining-momentum-in-2026.html" class="test-link">Why Slow Living Is Gaining Momentum in 2026 <span class="status ok">OK</span></a>
+        <a href="articles/the-rise-of-micro-habits.html" class="test-link">The Rise of Micro-Habits <span class="status ok">OK</span></a>
+        <a href="articles/how-ai-tools-are-reshaping-everyday-productivity.html" class="test-link">How AI Tools Are Reshaping Productivity <span class="status ok">OK</span></a>
+        
+        <h3 style="margin-top: 1rem; color: #d97706;">⚠️ To Be Created (9)</h3>
+        <p style="color: #6b7280; font-size: 0.875rem;">These article pages need to be created manually. Copy an existing article HTML file and replace the content.</p>
+        <div class="test-link" style="opacity: 0.5;">Smart Home Upgrades That Save Money <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">Side Hustles That Fit Around a Full-Time Job <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">Simple Budgeting Habits <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">Daily Habits That Support Mental Clarity <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">The Science Behind Morning Routines <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">Small Space Design Ideas <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">Decluttering Strategies <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">Community-Based Living <span class="status pending">PENDING</span></div>
+        <div class="test-link" style="opacity: 0.5;">Digital Trends Shaping Conversations <span class="status pending">PENDING</span></div>
+      </div>
+
+      <div class="test-section">
+        <h2>🧪 Interactive Features Test</h2>
+        <p style="margin-bottom: 1rem;">Test these features to ensure JavaScript is working:</p>
+        <button id="mobile-menu-btn-test" style="padding: 0.5rem 1rem; background: #111827; color: white; border: none; border-radius: 0.25rem; cursor: pointer; margin-right: 1rem;">Test Mobile Menu</button>
+        <button id="cookie-test" style="padding: 0.5rem 1rem; background: #111827; color: white; border: none; border-radius: 0.25rem; cursor: pointer;">Show Cookie Banner</button>
+        
+        <div id="test-result" style="margin-top: 1rem; padding: 1rem; background: white; border: 1px solid #e5e7eb; border-radius: 0.25rem; display: none;">
+          <strong>Test Result:</strong> <span id="test-message"></span>
+        </div>
+      </div>
+
+      <div class="test-section" style="background: #dbeafe;">
+        <h2>📋 Quick Instructions</h2>
+        <ol style="line-height: 2;">
+          <li><strong>All static pages work:</strong> Click on any static page link above to test</li>
+          <li><strong>3 article pages ready:</strong> These demonstrate the full article layout</li>
+          <li><strong>To create remaining articles:</strong> Copy any existing article HTML file, update content</li>
+          <li><strong>Mobile menu:</strong> Resize browser or click hamburger icon</li>
+          <li><strong>Forms work:</strong> Try the contact form and newsletter signup</li>
+          <li><strong>No errors:</strong> Open browser console (F12) to check for errors</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-section"><h3>About</h3><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="editorial-guidelines.html">Editorial Guidelines</a></li></ul></div>
+        <div class="footer-section"><h3>Legal</h3><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms & Conditions</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li></ul></div>
+        <div class="footer-section"><h3>Transparency</h3><ul><li><a href="how-we-make-money.html">How We Make Money</a></li></ul></div>
+        <div class="footer-section"><h3>Newsletter</h3><p style="font-size: 0.875rem;">Get practical insights delivered weekly.</p></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 StoryStream Daily. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <p>We use cookies to improve your experience. By continuing to browse, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+      <div class="cookie-actions">
+        <button id="accept-cookies" class="btn-accept">Accept</button>
+        <button id="close-cookies" class="btn-close">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Test button functionality
+    document.getElementById('mobile-menu-btn-test').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('active');
+      showTestResult('Mobile menu toggled! Check the navigation menu.');
+    });
+
+    document.getElementById('cookie-test').addEventListener('click', function() {
+      const cookieBanner = document.getElementById('cookie-banner');
+      localStorage.removeItem('cookieConsent');
+      cookieBanner.classList.add('active');
+      showTestResult('Cookie banner displayed! Try accepting or closing it.');
+    });
+
+    function showTestResult(message) {
+      const resultDiv = document.getElementById('test-result');
+      const messageSpan = document.getElementById('test-message');
+      messageSpan.textContent = message;
+      resultDiv.style.display = 'block';
+      setTimeout(() => {
+        resultDiv.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions - StoryStream Daily</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .faq-item { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e5e7eb; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 600; color: #111827; margin-bottom: 1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-question:hover { color: #374151; }
+    .faq-answer { color: #374151; line-height: 1.8; }
+    .faq-answer p { margin-bottom: 1rem; }
+    .faq-answer ul { margin: 1rem 0; padding-left: 1.5rem; }
+    .faq-answer li { margin-bottom: 0.5rem; }
+    .faq-toggle { font-size: 1.5rem; color: #6b7280; transition: transform 0.3s; }
+    .faq-item.active .faq-toggle { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-item.active .faq-answer { max-height: 2000px; }
+    .faq-category { background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+    .faq-category h2 { font-family: 'Playfair Display', serif; font-size: 1.875rem; margin-bottom: 1.5rem; color: #111827; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">StoryStream Daily</a>
+      <nav id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="editorial-guidelines.html">Editorial Guidelines</a>
+      </nav>
+      <button id="mobile-menu-btn" class="mobile-menu-btn">
+        <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg class="close-icon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-narrow static-page">
+      <h1>Frequently Asked Questions</h1>
+      <p style="font-size: 1.125rem; color: #6b7280; margin-bottom: 2rem;">Find answers to common questions about StoryStream Daily, our content, and how we operate.</p>
+
+      <div class="faq-category">
+        <h2>General Questions</h2>
+
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            What is StoryStream Daily?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>StoryStream Daily is a digital editorial platform that provides well-researched, practical content across six main categories: Lifestyle & Culture, Tech & Digital Life, Career & Money, Health & Wellbeing, Home & Living, and Trending & Insights.</p>
+            <p>We focus on delivering actionable insights that help readers make informed decisions about modern life, from adopting new technologies to building better daily habits.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Who writes your content?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Our content is created by a team of experienced writers, journalists, and subject matter experts who specialize in their respective fields. Each contributor brings professional expertise and a commitment to accurate, helpful content.</p>
+            <p>We also work with external experts to review technical or specialized content to ensure accuracy and reliability.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How often do you publish new content?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We publish new articles multiple times per week, ensuring a steady stream of fresh insights and perspectives. Our publication schedule varies by category, but readers can expect regular updates across all topic areas.</p>
+            <p>Subscribe to our newsletter to get our latest articles delivered directly to your inbox.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Is StoryStream Daily free to read?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! All of our content is completely free to access. We believe quality information should be accessible to everyone. We support our operations through ethical advertising and clearly labeled sponsored content, never through paywalls or subscription fees.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Content & Editorial</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How do you ensure content accuracy?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We follow strict editorial guidelines that include:</p>
+            <ul>
+              <li>Fact-checking all claims and statistics</li>
+              <li>Citing credible, authoritative sources</li>
+              <li>Expert review for specialized topics</li>
+              <li>Clear distinction between facts and opinions</li>
+              <li>Prompt corrections when errors are identified</li>
+            </ul>
+            <p>Learn more on our <a href="editorial-guidelines.html">Editorial Guidelines</a> page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Do you provide medical or financial advice?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Our content is for informational and educational purposes only. We do not provide professional medical, financial, legal, or other specialized advice. Always consult with qualified professionals for personalized guidance related to your specific situation.</p>
+            <p>Our health and finance articles are based on research and expert insights, but they should not replace professional consultation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How do you choose which topics to cover?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Our editorial team selects topics based on several factors:</p>
+            <ul>
+              <li>Reader interest and feedback</li>
+              <li>Emerging trends and cultural shifts</li>
+              <li>Practical relevance to everyday life</li>
+              <li>Availability of credible research and information</li>
+              <li>Gaps in existing coverage elsewhere</li>
+            </ul>
+            <p>We always prioritize content that genuinely helps our readers make better decisions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Can I suggest topics for articles?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! We love hearing from our readers about what they'd like to learn more about. Please <a href="contact.html">contact us</a> with your topic suggestions, and we'll consider them for future coverage.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            What if I find an error in an article?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We take accuracy seriously. If you spot an error, please <a href="contact.html">contact our editorial team</a> immediately. We review all error reports and make corrections promptly when warranted, clearly noting the correction at the bottom of the affected article.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Revenue & Advertising</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How does StoryStream Daily make money?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We generate revenue through:</p>
+            <ul>
+              <li>Display advertising from vetted ad networks</li>
+              <li>Sponsored content (clearly labeled)</li>
+              <li>Affiliate partnerships (where applicable)</li>
+              <li>Newsletter sponsorships</li>
+            </ul>
+            <p>For complete transparency, visit our <a href="how-we-make-money.html">How We Make Money</a> page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Does advertising influence your editorial content?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. We maintain a strict separation between advertising and editorial content. Our editorial team has complete independence in choosing topics, perspectives, and recommendations. Advertisers have no influence over our editorial decisions.</p>
+            <p>All sponsored content is clearly labeled as such and follows the same quality standards as our regular content.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How can I advertise on StoryStream Daily?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We work with advertisers who align with our values and audience. For advertising inquiries, please contact us at <a href="mailto:ads@storystreamdaily.site">ads@storystreamdaily.site</a> with details about your campaign.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Privacy & Data</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            What information do you collect about visitors?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We collect minimal information necessary to operate our website and improve user experience. This includes:</p>
+            <ul>
+              <li>Anonymous analytics data (page views, time on site, etc.)</li>
+              <li>Cookie data for functionality and preferences</li>
+              <li>Email addresses (only if you subscribe to our newsletter)</li>
+            </ul>
+            <p>We never sell personal information to third parties. Read our full <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How do I manage cookie preferences?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>When you first visit our site, you'll see a cookie consent banner. You can accept or close it. Most browsers also allow you to control cookies through their settings.</p>
+            <p>Learn more about our use of cookies on our <a href="cookie-policy.html">Cookie Policy</a> page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How do I unsubscribe from your newsletter?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Every newsletter email includes an unsubscribe link at the bottom. Click it to be immediately removed from our mailing list. You can also <a href="contact.html">contact us</a> to request removal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Technical Support</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            The website isn't displaying correctly. What should I do?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Try these troubleshooting steps:</p>
+            <ul>
+              <li>Clear your browser cache and cookies</li>
+              <li>Update your browser to the latest version</li>
+              <li>Try a different browser (Chrome, Firefox, Safari, Edge)</li>
+              <li>Disable browser extensions temporarily</li>
+              <li>Check your internet connection</li>
+            </ul>
+            <p>If problems persist, please <a href="contact.html">contact us</a> with details about your device, browser, and the specific issue.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Do you have a mobile app?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We don't currently have a dedicated mobile app, but our website is fully optimized for mobile devices. You can access all content through your mobile browser with the same great experience.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Can I share or republish your articles?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>You're welcome to share links to our articles on social media and other platforms. However, republishing or copying our content without permission violates our copyright.</p>
+            <p>For licensing or syndication inquiries, please <a href="contact.html">contact us</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Contributing & Careers</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Do you accept guest posts or contributions?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We occasionally accept guest contributions from subject matter experts. If you have relevant expertise and a compelling topic, please <a href="contact.html">contact our editorial team</a> with:</p>
+            <ul>
+              <li>Your background and credentials</li>
+              <li>Proposed topic and why it matters to our readers</li>
+              <li>Writing samples (if available)</li>
+            </ul>
+            <p>Note that we have high editorial standards and cannot publish all submissions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Are you hiring?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We're always interested in connecting with talented writers, editors, and digital professionals. While we may not have open positions at all times, feel free to send your resume and portfolio to <a href="mailto:careers@storystreamdaily.site">careers@storystreamdaily.site</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; padding: 2rem; background: #f9fafb; border-radius: 0.5rem; text-align: center;">
+        <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 1rem;">Still Have Questions?</h2>
+        <p style="color: #6b7280; margin-bottom: 1.5rem;">Can't find the answer you're looking for? We're here to help.</p>
+        <a href="contact.html" style="display: inline-block; padding: 0.75rem 2rem; background: #111827; color: white; text-decoration: none; border-radius: 0.25rem; font-weight: 500;">Contact Us</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="editorial-guidelines.html">Editorial Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Transparency</h3>
+          <ul>
+            <li><a href="how-we-make-money.html">How We Make Money</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p style="font-size: 0.875rem;">Get practical insights delivered weekly.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 StoryStream Daily. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <p>We use cookies to improve your experience. By continuing to browse, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+      <div class="cookie-actions">
+        <button id="accept-cookies" class="btn-accept">Accept</button>
+        <button id="close-cookies" class="btn-close">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.parentElement;
+      const isActive = faqItem.classList.contains('active');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Toggle current FAQ
+      if (!isActive) {
+        faqItem.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
